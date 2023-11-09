@@ -39,6 +39,10 @@
         #listagem{
             padding: 15px 0;
         }
+
+        .row{
+            padding: 10px;
+        }
     </style>
 
 </head>
@@ -51,44 +55,46 @@
 
             <div class="row">
 
-                <div>
+                <div class="col-md-4">
                     <a> Insira seu nome: </a>
 
-                    <input type="text" class="form-control col-md-3" id="cliente_nome" placeholder="NOME"
+                    <input type="text" class="form-control " id="cliente_nome" placeholder="NOME"
                         name="cliente_nome" />
                 </div>
 
-                <div>
+                <div class="col-md-4">
                     <a>Insira seu CPF (somente números): </a>
 
-                    <input type="text" class="form-control col-md-3" id="cpf" placeholder="CPF" name="cpf" />
+                    <input type="text" class="form-control" id="cpf" placeholder="CPF" name="cpf" />
                 </div>
 
-                <div>
+                <div class="col-md-4">
 
                     <a> Insira seu e-mail:</a>
-                    <input type="text" class="form-control col-md-3" id="email" placeholder="E-MAIL" name="email" />
+                    <input type="text" class="form-control" id="email" placeholder="E-MAIL" name="email" />
 
                 </div>
 
-                <div>
+                <div class="col-md-4">
 
                     <a> Insira sua senha: </a>
-                    <input type="password" class="form-control col-md-3" id="senha" placeholder="SENHA" name="senha" />
+                    <input type="password" class="form-control" id="senha" placeholder="SENHA" name="senha" />
 
                 </div>
 
-                <div>
+                <div class="col-md-4">
 
-                <a> Insira sua data de nascimento:</a>
+                    <a> Insira sua data de nascimento:</a>
 
-                <input type="date" class="form-control col-md-3" id="data" name="data" />
+                    <input type="date" class="form-control" id="data" name="data" />
+                
+                </div>
 
             </div>
+     
+            <button type="button" class="btn btn-primary"id="client_create">Cadastrar</button>
+           
 
-            </div>
-
-            <button type="button" class="btn btn-primary" id="client_create">Cadastrar</button>
 
             
 
