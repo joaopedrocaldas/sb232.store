@@ -1,6 +1,6 @@
 $(function () {
 
-    const API = 'http://localhost:8080';
+    const API = 'http://localhost:8082';
 
     Listar()
 
@@ -11,7 +11,7 @@ $(function () {
                 'Content-Type': 'application/json'
             },
             type: 'GET',
-            url: `${API}/client`,
+            url: `${API}/client/`,
             success: function (result) {
                 console.log(result);
 
@@ -68,7 +68,7 @@ $(function () {
                 'Content-Type': 'application/json'
             },
             type: 'POST',
-            url: `${API}/client`,
+            url: `${API}/client/`,
             dataType: 'json',
             data: JSON.stringify({
                 'name': nome,
